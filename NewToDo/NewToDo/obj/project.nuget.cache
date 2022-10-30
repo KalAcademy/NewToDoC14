@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ma4U3rj6EvVwXoW1gpoQNuOKiJ8suUCnA1Rvasf7W4YQFExxIWAqUDo3z+878I9ray/njil2NmncJDx09IJLBQ==",
+  "success": true,
+  "projectFilePath": "G:\\Github\\SWC14\\NewToDo\\NewToDo\\NewToDo\\NewToDo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FF5ADwMI1HVGsgdcqx08pc1Yfw2caR/1lEs4PdVe5eP7Ju3+CLD70abwYELrLKjzRfbSYNWD4mVW0MLV3USFtg==",
+  "success": true,
+  "projectFilePath": "G:\\Github\\SWC14\\NewToDo\\NewToDo\\NewToDo.iOS\\NewToDo.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\KalAcademy\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

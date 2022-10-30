@@ -1,0 +1,17 @@
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.csproj.AssemblyReference.cache
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.GeneratedMSBuildEditorConfig.editorconfig
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\App.xaml.g.cs
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\Views\ToDoPage.xaml.g.cs
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.AssemblyInfoInputs.cache
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.AssemblyInfo.cs
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.csproj.CoreCompileInputs.cache
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.dll
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\refint\NewToDo.dll
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\NewToDo.pdb
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\bin\Debug\netstandard2.0\NewToDo.deps.json
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\bin\Debug\netstandard2.0\NewToDo.dll
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\bin\Debug\netstandard2.0\NewToDo.pdb
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\XamlC.stamp
+G:\Github\SWC14\NewToDo\NewToDo\NewToDo\obj\Debug\netstandard2.0\ref\NewToDo.dll
