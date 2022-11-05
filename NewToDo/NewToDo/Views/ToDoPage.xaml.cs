@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.IO;
+using NewToDo.Models;
 
 namespace NewToDo.Views
 {
@@ -18,17 +19,37 @@ namespace NewToDo.Views
             InitializeComponent();
         }
 
-        private void OnSaveButtonClicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            var filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                $"{Path.GetRandomFileName()}.notes.txt");
-            File.WriteAllText(filename, ToDoText.Text);
-
+            var todo = (ToDo)BindingContext;
+            if (todo != null && !string.IsNullOrEmpty(todo.FileName))
+            {
+                ToDoText.Text = File.ReadAllText(todo.FileName);
+            }
         }
 
-        private void OnDeleteButtonClicked(object sender, EventArgs e)
+        private async void OnSaveButtonClicked(object sender, EventArgs e)
         {
+            var todo = (ToDo)BindingContext;
+            if (todo == null || string.IsNullOrEmpty(todo.FileName))
+            {
+                todo = new ToDo();
+                todo.FileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    $"{Path.GetRandomFileName()}.notes.txt");
+            }
+            File.WriteAllText(todo.FileName, ToDoText.Text);
+            await Navigation.PopAsync();
+        }
 
+        private async void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            var todo = (ToDo)BindingContext;
+            if (File.Exists(todo.FileName))
+            {
+                File.Delete(todo.FileName);
+            }
+            ToDoText.Text = string.Empty;
+            await Navigation.PopAsync();
         }
     }
 }

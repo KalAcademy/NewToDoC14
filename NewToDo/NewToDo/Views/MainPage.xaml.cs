@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using NewToDo.Models;
+using System.IO;
 
 namespace NewToDo.Views
 {
@@ -17,9 +19,30 @@ namespace NewToDo.Views
             InitializeComponent();
         }
 
-        private void TodoListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        protected override void OnAppearing()
         {
+            var todos = new List<ToDo>();
+            var files = Directory.EnumerateFiles(Environment.GetFolderPath(
+                Environment.SpecialFolder.LocalApplicationData), "*.notes.txt");
+            foreach (var file in files)
+            {
+                var todo = new ToDo
+                {
+                    Text = File.ReadAllText(file),
+                    Date = File.GetCreationTime(file),
+                    FileName = file
+                };
+                todos.Add(todo);
+            }
+            TodoListView.ItemsSource = todos.OrderByDescending(t => t.Date);
+        }
 
+        private async void TodoListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushModalAsync(new ToDoPage
+            {
+                BindingContext = (ToDo)e.SelectedItem
+            });
         }
     }
 }
