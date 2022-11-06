@@ -38,10 +38,16 @@ namespace NewToDo.Views
                     $"{Path.GetRandomFileName()}.notes.txt");
             }
             File.WriteAllText(todo.FileName, ToDoText.Text);
-            await Navigation.PopAsync();
+            if (Navigation.ModalStack.Count > 0)
+            {
+                await Navigation.PopModalAsync();
+            } else 
+            {
+                Shell.Current.CurrentItem = (Shell.Current as AppShell).MainPageContent;
+            }
         }
 
-        private async void OnDeleteButtonClicked(object sender, EventArgs e)
+        private void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             var todo = (ToDo)BindingContext;
             if (File.Exists(todo.FileName))
@@ -49,7 +55,7 @@ namespace NewToDo.Views
                 File.Delete(todo.FileName);
             }
             ToDoText.Text = string.Empty;
-            await Navigation.PopAsync();
+            Navigation.PopModalAsync();
         }
     }
 }
