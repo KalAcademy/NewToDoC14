@@ -37,12 +37,12 @@ namespace NewToDo.Views
             TodoListView.ItemsSource = todos.OrderByDescending(t => t.Date);
         }
 
-        private async void TodoListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void TodoListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushModalAsync(new ToDoPage
+            Navigation.PushModalAsync(new ToDoPage
             {
                 BindingContext = (ToDo)e.SelectedItem
-            });
+            }).Wait();
         }
     }
 }
